@@ -6,6 +6,7 @@ public class Bus extends Vehicle{
         size = VehicleSize.Large;
     }
 
+    // check spot type only
     @Override
     public boolean canFitInSpot(ParkingSpot spot) {
         return spot.getSize() == VehicleSize.Large;
